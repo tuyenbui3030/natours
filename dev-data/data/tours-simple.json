@@ -140,5 +140,7 @@
   { "id": 12, "name": "Plieku", "duration": 10, "difficulty": "easy" },
   { "id": 13, "name": "Ho Tram", "duration": 10, "difficulty": "easy" },
   { "id": 14, "name": "Vung Tau", "duration": 10, "difficulty": "easy" },
-  { "id": 15, "name": "Chu Dang Yaa", "duration": 10, "difficulty": "easy" }
+  { "id": 15, "name": "Chu Dang Yaa", "duration": 10, "difficulty": "easy" },
+  { "id": 16, "name": "Kon Tum", "duration": 10, "difficulty": "easy" },
+  { "id": 17, "name": "Tokyo", "duration": 10, "difficulty": "easy" }
 ]
