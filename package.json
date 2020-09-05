@@ -4,13 +4,14 @@
   "description": "Learning node, express and mongoDB",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Tuyen Bui",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.4"
   }
 }
