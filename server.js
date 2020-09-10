@@ -10,8 +10,8 @@ const DB = process.env.DATABASE.replace(
 );
 
 mongoose
-  .connect(process.env.DATABASE_LOCAL, {
-    //.connect(DB, {
+  //.connect(process.env.DATABASE_LOCAL, {
+  .connect(DB, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
@@ -33,6 +33,20 @@ const tourSchema = new mongoose.Schema({
   },
 });
 const Tour = mongoose.model('Tour', tourSchema);
+const testTour = new Tour({
+  name: 'Bien ho - Pleiku',
+  rating: 4.8,
+  price: 450,
+});
+testTour
+  .save()
+  .then((doc) => {
+    console.log(doc);
+  })
+  .catch((err) => {
+    console.log('ERROR 💥:', err);
+  });
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Application starting on port ${port}!`);
