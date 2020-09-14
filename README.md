@@ -1,1 +1,2 @@
-Learning node, express and mongoDB
+Learning node, express and mongoDB.
+Learning github 
